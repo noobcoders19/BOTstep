@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Water Refilling Station</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">💧 AquaFill</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#choose-container">Container</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="home">
+    <div class="container text-center">
+      <h1>Welcome to AquaFill Water Refilling Station</h1>
+      <p>Your trusted partner for clean, safe, and refreshing water refills.</p>
+      <p>The process involves carefully placing the container into the water, ensuring it is fully submerged without splashing, which causes the water level to rise. The change in water level represents the displaced volume, which can vary depending on whether the water is measured as free-flowing (bulk volume), confined (container volume), or calibrated in a measuring device. After observing the displacement, the water can be refilled to the desired level, taking into account the type of water volume being measured, whether for precise scientific measurement or general approximation</p>
+      <a href="#choose-container" class="btn btn-main">Try Now!</a>
+    </div>
+  </header>
+
+
+  <section id="choose-container" class="container">
+    <div class="section text-center">
+      <h2>Choose Your Container</h2>
+      <p>Select your preferred water container type below.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-sm-6 container-option">
+          <img src="B1.jpg" alt="Round Gallon" onclick="goToProcess('Round Gallon')">
+          <h5>Round Gallon</h5>
+          <button class="btn btn-main" onclick="goToProcess('Round Gallon')">Proceed</button>
+        </div>
+
+        <div class="col-md-3 col-sm-6 container-option">
+          <img src="B2.jpg" alt="Square Gallon" onclick="goToProcess('Square Gallon')">
+          <h5>Square Gallon</h5>
+          <button class="btn btn-main" onclick="goToProcess('Square Gallon')">Proceed</button>
+        </div>
+
+        <div class="col-md-3 col-sm-6 container-option">
+          <img src="B3.jpg" alt="Jug Container" onclick="goToProcess('Jug Container')">
+          <h5>Jug Container</h5>
+          <button class="btn btn-main" onclick="goToProcess('Jug Container')">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="process" class="container">
+    <div class="section text-center">
+      <h2>Refilling Process</h2>
+      <p class="mb-5">Follow these simple steps to refill your water container.</p>
+
+
+      <div id="selected-container" class="mb-4"></div>
+
+      <div class="row">
+        <div class="col-md-4 process-step">
+          <img src="WATER.png" alt="place">
+          <h5>1. Place Container in Volume Bay</h5>
+          <p>Carefully position your container under the dispenser for filling.</p>
+          <P>The process involves carefully placing the container into the water, ensuring it is fully submerged without splashing, which causes the water level to rise. The change in water level represents the displaced volume, which can vary depending on whether the water is measured as free-flowing (bulk volume), confined (container volume), or calibrated in a measuring device. After observing the displacement, the water can be refilled to the desired level, taking into account the type of water volume being measured, whether for precise scientific measurement or general approximation.</P>
+          <button class="btn btn-main">Proceed</button>
+        </div>
+
+        <div class="col-md-4 process-step">
+          <img src="TAP.png" alt="select">
+          <h5>2. Select Water Type</h5>
+          <p>Choose the water type — mineral, purified, or alkaline.</p>
+          <P>When using the filling bay, it is important to first select the water type by carefully choosing the correct option on the control panel, valve, or dispenser. This step ensures that the water being dispensed whether it is potable for drinking, deionized for laboratory or industrial use, or process water for equipment and cleaning is appropriate for the intended purpose. Once the water type is selected, the system activates the corresponding water line, allowing the container or tank to be filled safely and efficiently while preventing contamination or damage from using the wrong type of water</P>
+          <button class="btn btn-main">Proceed</button>
+        </div>
+
+        <div class="col-md-4 process-step">
+          <img src="WATERWATER.png" alt="dispense">
+          <h5>3. Start Water Dispensing</h5>
+          <p>Watch as your container fills automatically with pure water.</p>
+          <P>After selecting the appropriate water type in the filling bay, you can start water dispensing by activating the pump or opening the valve, allowing the chosen water to flow into the container or tank safely and efficiently while monitoring the process to prevent overflow or contamination</P>
+          <button class="btn btn-main">Proceed</button>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4 process-step">
+          <img src="HC.png" alt="payment">
+          <h5>4. Payment Processing</h5>
+          <p>Complete your transaction easily via cash or digital payment.</p>
+          <P>To complete the transaction at the filling bay, the customer selects the desired water type, reviews the cost, completes the payment using cash, card, or mobile method, and upon confirmation, the system allows the water dispensing to begin safely and efficiently.</P>
+          <button class="btn btn-main">Proceed</button>
+        </div>
+
+        <div class="col-md-4 process-step">
+          <img src="WGUY.png" alt="take-water">
+          <h5>5. Take Your Refilled Water</h5>
+          <p>Collect your container and ensure the cap is securely sealed.</p>
+          <P>After completing the selection of the water type and the payment process at the filling bay, customers take the refilled water in their containers or tanks, ensuring that it is properly sealed or capped before transport to maintain cleanliness and prevent spillage </P>
+          <button class="btn btn-main">Done</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about" class="container">
+    <div class="section">
+      <h2>About Us</h2>
+      <p>Our water refilling service provides safe, clean, and purified water for everyday use. We offer a variety of water types, including potable drinking water, deionized water for laboratory use, and process water for industrial applications. At our filling bay, customers can easily select the water type, complete the payment process, and take their refilled containers efficiently. Our goal is to ensure convenience, quality, and safety in every refill, while maintaining environmentally friendly practices by encouraging reusable containers and reducing plastic waste.</p>
+    </div>
+  </section>
+
+  
+  <section id="services" class="container">
+    <div class="section">
+      <h2>Services</h2>
+      <p>1.Potable Drinking Water – Safe, purified water suitable for everyday consumption.</p>
+      <p>Deionized or Distilled Water – High-purity water for laboratories, medical use, or industrial processes</p>
+      <p>Bulk Water Delivery – Large-volume water refills for households, offices, or commercial establishment</p>
+      <p>On-Site Refilling – Customers can refill their containers directly at our filling bay.</p>
+      <p>Water Quality Testing – Regular testing ensures that all water meets safety and health standards</p>
+      <p>Container Cleaning Services – Optional cleaning of bottles and tanks to ensure hygiene before refilling</p>
+
+    </div>
+  </section>
+
+  
+  <section id="contact" class="container">
+    <div class="section">
+      <h2>Contact Us</h2>
+      <p><strong>Address:</strong> Alegria Cordova Cebu</p>
+      <p><strong>Contact Number:</strong> 09123456789</p>
+      <p><strong>Email:</strong> jaygo123@gmail.com</p>
+      <p><strong>Facebook:</strong> <a href="#" target="_blank">Jay Goy</a></p>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>© 2025 AquaFill Water Refilling Station | All Rights Reserved</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+  <script>
+    function goToProcess(containerType) {
+    
+      const display = document.getElementById("selected-container");
+      display.innerHTML = `
+        <h4>You selected: <span style="color:#007bff;">${containerType}</span></h4>
+      `;
+
+      document.getElementById("process").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
